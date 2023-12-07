@@ -17,6 +17,9 @@ app.get(`${BASEURL}fortune`, describeDayNumber);
 app.get(`${BASEURL}aurelius`, describeNumerology);
 app.get(`${BASEURL}numerology/:number`, getNumerologyProfile);
 app.get(`${BASEURL}numerology/:number`, getLifePath);
+app.get("/", (req, res) => {
+  res.send("Hello, World!");
+});
 
 const PORT = 4000;
 app.listen(4000, () => console.log(`Server running on ${PORT}`));
