@@ -12,5 +12,12 @@
   "scripts": {
     "start": "node index.js",
     "test": "jest"
-  }
+  },
+  "name": "numerology-basics",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
