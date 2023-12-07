@@ -1,3 +1,4 @@
+/* First Background */
 body {
   background-image: url("./background1.JPG");
   background-size: cover;
@@ -12,6 +13,7 @@ body {
   margin: 0;
 }
 
+/* Transitioning through Backgrounds */
 #background1,
 #background2,
 #background3,
@@ -31,58 +33,6 @@ body {
 
 #background2 {
   opacity: 0;
-}
-
-h1 {
-  font-family: "Helvetica", sans-serif;
-  font-size: 44px;
-  color: black;
-  opacity: 0;
-  animation: fadeIn 4s ease forwards;
-  -webkit-user-select: none; /* Chrome, Safari, and Opera */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none;
-}
-
-input[type="text"] {
-  margin: 8px;
-  width: 152px;
-  height: 44px;
-  border-radius: 53px;
-  text-align: center;
-  font-size: 17px;
-  border: none;
-  font-family: "Helvetica", sans-serif;
-  opacity: 0;
-  background-color: black;
-  color: white;
-  animation: fadeIn 3s ease forwards;
-  animation-delay: 1s;
-  -webkit-user-select: none; /* Chrome, Safari, and Opera */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none;
-}
-
-#submitButton {
-  margin: 8px;
-  width: 152px;
-  height: 152px;
-  border-radius: 53%;
-  background-color: #000;
-  color: white;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-  font-family: "Helvetica", sans-serif;
-  opacity: 0;
-  animation: fadeIn 4s ease forwards;
-  animation-delay: 1.7s;
-  -webkit-user-select: none; /* Chrome, Safari, and Opera */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none;
 }
 
 #whatIsNumerology {
@@ -145,20 +95,20 @@ input[type="text"] {
   user-select: none;
 }
 
-#thomasButton {
+input[type="text"] {
   margin: 8px;
   width: 152px;
-  height: 152px;
-  border-radius: 53%;
-  background-color: #000;
-  color: white;
+  height: 44px;
+  border-radius: 53px;
+  text-align: center;
   font-size: 17px;
   border: none;
-  cursor: pointer;
   font-family: "Helvetica", sans-serif;
   opacity: 0;
-  animation: fadeIn 4s ease forwards;
-  animation-delay: 6.2s;
+  background-color: black;
+  color: white;
+  animation: fadeIn 3s ease forwards;
+  animation-delay: 1s;
   -webkit-user-select: none; /* Chrome, Safari, and Opera */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */

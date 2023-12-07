@@ -1,6 +1,4 @@
 const request = require("supertest");
-const app = require("../server/controller.js");
-const controller = require("../server/controller.js");
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
@@ -9,8 +7,8 @@ const {
   describeDayNumber,
   describeNumerology,
   getNumerologyProfile,
-  getLifePath,
-} = require("../server/controller.js");
+  // getLifePath,
+} = require("../controller.js");
 
 describe("Controller Tests", () => {
   let mockResponse;
@@ -63,5 +61,14 @@ describe("Controller Tests", () => {
     submitBtn.click();
 
     expect(getLifePath).toHaveBeenCalled();
+  });
+
+  const placeholder = "Enter Birthdate";
+  test("check placeholder text", () => {
+    const dom = new JSDOM(
+      `<!DOCTYPE html><input id="dayInput" type="text" placeholder="Enter Birthdate" maxlength="10" />`
+    );
+    const input = dom.window.document.getElementById("dayInput");
+    expect(input.placeholder).toBe(`${placeholder}`);
   });
 });

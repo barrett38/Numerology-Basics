@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const PORT = 4000;
-  const BASEURL = `http://localhost:${PORT}/api`;
+  const BASEURL = `http://localhost:${PORT}/api/`;
 
   // background image transition
   const images = [
@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
       background1.style.backgroundImage = `url(${images[counter]})`;
       background2.style.opacity = "0";
-    }, 7100); // transition duration
-  }, 9800); // change image every 5000 milliseconds (5 seconds)
+    }, 9800); // transition duration
+  }, 17000); // change image every 5000 milliseconds (5 seconds)
 
   const submitBtn = document.getElementById("submitButton");
   const numerologyBtn = document.getElementById("whatIsNumerology");
@@ -35,21 +35,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const dayInput = document.getElementById("dayInput");
 
   const describeLifePath = () => {
-    axios.get(`${BASEURL}/compliment`).then(res => {
+    axios.get(`${BASEURL}compliment`).then(res => {
       const data = res.data;
       alert(data);
     });
   };
 
   const describeDayNumber = () => {
-    axios.get(`${BASEURL}/fortune`).then(res => {
+    axios.get(`${BASEURL}fortune`).then(res => {
       const data = res.data;
       alert(data);
     });
   };
 
   const describeNumerology = () => {
-    axios.get(`${BASEURL}/aurelius`).then(res => {
+    axios.get(`${BASEURL}aurelius`).then(res => {
       const data = res.data;
       alert(data);
     });
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const dateInput = () => {
     const number = document.getElementById("dayInput").value;
-    axios.get(`${BASEURL}/numerology/${number}`).then(res => {
+    axios.get(`${BASEURL}numerology/${number}`).then(res => {
       const data = res.data;
       alert(data);
     });
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const getLifePath = () => {
     const number = document.getElementById("dayInput").value;
-    axios.get(`${BASEURL}/numerology/${number}`).then(res => {
+    axios.get(`${BASEURL}numerology/${number}`).then(res => {
       const data = res.data;
       alert(data);
     });
@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   dayInput.addEventListener("blur", function () {
     if (this.value === "") {
-      this.placeholder = "MM-DD-YYYY";
+      this.placeholder = "Enter Birthdate";
     }
   });
 });
