@@ -10,7 +10,7 @@ const {
   describeNumerology,
   getNumerologyProfile,
   getLifePath,
-} = require("./controller");
+} = require("./server/controller");
 
 app.get(`${BASEURL}compliment`, describeLifePath);
 app.get(`${BASEURL}fortune`, describeDayNumber);
