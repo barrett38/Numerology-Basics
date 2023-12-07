@@ -3,7 +3,6 @@ const cors = require("cors");
 const app = express();
 app.use(cors());
 app.use(express.json());
-const BASEURL = `/api/`;
 const {
   describeLifePath,
   describeDayNumber,
@@ -12,11 +11,11 @@ const {
   getLifePath,
 } = require("./server/controller");
 
-app.get(`${BASEURL}compliment`, describeLifePath);
-app.get(`${BASEURL}fortune`, describeDayNumber);
-app.get(`${BASEURL}aurelius`, describeNumerology);
-app.get(`${BASEURL}numerology/:number`, getNumerologyProfile);
-app.get(`${BASEURL}numerology/:number`, getLifePath);
+app.get(`/api/compliment`, describeLifePath);
+app.get(`/api/fortune`, describeDayNumber);
+app.get(`/api/aurelius`, describeNumerology);
+app.get(`/api/numerology/:number`, getNumerologyProfile);
+app.get(`/api/numerology/:number`, getLifePath);
 
 const PORT = 4000;
 app.listen(4000, () => console.log(`Server running on ${PORT}`));
