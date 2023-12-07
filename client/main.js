@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const PORT = 4000;
-  const BASEURL = `http://localhost:${PORT}/api/`;
+  const BASEURL = `http://localhost:${PORT}/api`;
 
   // background image transition
   const images = [
@@ -35,21 +35,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const dayInput = document.getElementById("dayInput");
 
   const describeLifePath = () => {
-    axios.get(`${BASEURL}compliment/`).then(res => {
+    axios.get(`${BASEURL}/compliment`).then(res => {
       const data = res.data;
       alert(data);
     });
   };
 
   const describeDayNumber = () => {
-    axios.get(`${BASEURL}fortune/`).then(res => {
+    axios.get(`${BASEURL}/fortune`).then(res => {
       const data = res.data;
       alert(data);
     });
   };
 
   const describeNumerology = () => {
-    axios.get(`${BASEURL}aurelius/`).then(res => {
+    axios.get(`${BASEURL}/aurelius`).then(res => {
       const data = res.data;
       alert(data);
     });
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const dateInput = () => {
     const number = document.getElementById("dayInput").value;
-    axios.get(`${BASEURL}numerology/${number}`).then(res => {
+    axios.get(`${BASEURL}/numerology/${number}`).then(res => {
       const data = res.data;
       alert(data);
     });
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const getLifePath = () => {
     const number = document.getElementById("dayInput").value;
-    axios.get(`${BASEURL}numerology/${number}`).then(res => {
+    axios.get(`${BASEURL}/numerology/${number}`).then(res => {
       const data = res.data;
       alert(data);
     });
