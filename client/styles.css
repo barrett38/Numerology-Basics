@@ -1,0 +1,196 @@
+body {
+  background-image: url("./background1.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 107vh;
+  margin: 0;
+}
+
+#background1,
+#background2,
+#background3,
+#background4,
+#background5,
+#background6,
+#background7,
+#background8 {
+  position: absolute;
+  width: 116%;
+  height: 116%;
+  transition: opacity 1s;
+  background-position: center;
+  background-size: 100%;
+  z-index: -1;
+}
+
+#background2 {
+  opacity: 0;
+}
+
+h1 {
+  font-family: "Helvetica", sans-serif;
+  font-size: 44px;
+  color: black;
+  opacity: 0;
+  animation: fadeIn 4s ease forwards;
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+input[type="text"] {
+  margin: 8px;
+  width: 152px;
+  height: 44px;
+  border-radius: 53px;
+  text-align: center;
+  font-size: 17px;
+  border: none;
+  font-family: "Helvetica", sans-serif;
+  opacity: 0;
+  background-color: black;
+  color: white;
+  animation: fadeIn 3s ease forwards;
+  animation-delay: 1s;
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+#submitButton {
+  margin: 8px;
+  width: 152px;
+  height: 152px;
+  border-radius: 53%;
+  background-color: #000;
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  font-family: "Helvetica", sans-serif;
+  opacity: 0;
+  animation: fadeIn 4s ease forwards;
+  animation-delay: 1.7s;
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+#whatIsNumerology {
+  margin: 8px;
+  width: 152px;
+  height: 152px;
+  border-radius: 53%;
+  background-color: #000;
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  font-family: "Helvetica", sans-serif;
+  opacity: 0;
+  animation: fadeIn 4s ease forwards;
+  animation-delay: 2.6s;
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+#whatIsALifePath {
+  margin: 8px;
+  width: 152px;
+  height: 152px;
+  border-radius: 53%;
+  background-color: #000;
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  font-family: "Helvetica", sans-serif;
+  opacity: 0;
+  animation: fadeIn 4s ease forwards;
+  animation-delay: 3.5s;
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+#whatIsADayNumber {
+  margin: 8px;
+  width: 152px;
+  height: 152px;
+  border-radius: 53%;
+  background-color: #000;
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  font-family: "Helvetica", sans-serif;
+  opacity: 0;
+  animation: fadeIn 4s ease forwards;
+  animation-delay: 4.4s;
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+#thomasButton {
+  margin: 8px;
+  width: 152px;
+  height: 152px;
+  border-radius: 53%;
+  background-color: #000;
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  font-family: "Helvetica", sans-serif;
+  opacity: 0;
+  animation: fadeIn 4s ease forwards;
+  animation-delay: 6.2s;
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+#submitButton {
+  margin: 10px;
+  width: 150px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #000;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: "Helvetica", sans-serif;
+  opacity: 0;
+  animation: fadeIn 3s ease forwards;
+  animation-delay: 2s;
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
