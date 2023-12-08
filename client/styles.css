@@ -48,7 +48,7 @@ body {
   font-family: "Helvetica", sans-serif;
   opacity: 0;
   animation: fadeIn 4s ease forwards;
-  animation-delay: 2.6s;
+  animation-delay: 1s;
   -webkit-user-select: none; /* Chrome, Safari, and Opera */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
@@ -68,10 +68,10 @@ body {
   font-family: "Helvetica", sans-serif;
   opacity: 0;
   animation: fadeIn 4s ease forwards;
-  animation-delay: 3.5s;
-  -webkit-user-select: none; /* Chrome, Safari, and Opera */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
+  animation-delay: 1.7s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -88,10 +88,10 @@ body {
   font-family: "Helvetica", sans-serif;
   opacity: 0;
   animation: fadeIn 4s ease forwards;
-  animation-delay: 4.4s;
-  -webkit-user-select: none; /* Chrome, Safari, and Opera */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
+  animation-delay: 2.6s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -108,10 +108,10 @@ input[type="text"] {
   background-color: black;
   color: white;
   animation: fadeIn 3s ease forwards;
-  animation-delay: 1s;
-  -webkit-user-select: none; /* Chrome, Safari, and Opera */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
+  animation-delay: 3.5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -132,10 +132,10 @@ button:hover {
   font-family: "Helvetica", sans-serif;
   opacity: 0;
   animation: fadeIn 3s ease forwards;
-  animation-delay: 2s;
-  -webkit-user-select: none; /* Chrome, Safari, and Opera */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
+  animation-delay: 4.4s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
