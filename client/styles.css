@@ -1,6 +1,6 @@
 /* First Background */
 body {
-  background-image: url("./background1.JPG");
+  background-image: url("./backgrounds/background1.JPG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,7 +48,7 @@ body {
   font-family: "Helvetica", sans-serif;
   opacity: 0;
   animation: fadeIn 4s ease forwards;
-  animation-delay: 1s;
+  animation-delay: 0.8s;
   -webkit-user-select: none; /* Chrome, Safari, and Opera */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */

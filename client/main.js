@@ -4,14 +4,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // background image transition
   const images = [
-    "./background1.JPG",
-    "./background2.JPG",
-    "./background3.JPG",
-    "./background4.JPG",
-    "./background5.JPG",
-    "./background6.JPG",
-    "./background7.JPG",
-    "./background8.JPG",
+    "./backgrounds/background1.JPG",
+    "./backgrounds/background2.JPG",
+    "./backgrounds/background3.JPG",
+    "./backgrounds/background4.JPG",
+    "./backgrounds/background5.JPG",
+    "./backgrounds/background6.JPG",
+    "./backgrounds/background7.JPG",
+    "./backgrounds/background8.JPG",
   ];
   let counter = 0;
 
@@ -25,14 +25,27 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
       background1.style.backgroundImage = `url(${images[counter]})`;
       background2.style.opacity = "0";
-    }, 9800); // transition duration
-  }, 17000); // change image every 5000 milliseconds (5 seconds)
+    }, 9800);
+  }, 17000);
 
   const submitBtn = document.getElementById("submitButton");
   const numerologyBtn = document.getElementById("whatIsNumerology");
   const lifePathBtn = document.getElementById("whatIsALifePath");
   const dayNumBtn = document.getElementById("whatIsADayNumber");
-  const dayInput = document.getElementById("dayInput");
+
+  // Disable the buttons initially
+  submitBtn.disabled = true;
+  numerologyBtn.disabled = true;
+  lifePathBtn.disabled = true;
+  dayNumBtn.disabled = true;
+
+  // Enable the buttons after the transition duration
+  setTimeout(function () {
+    submitBtn.disabled = false;
+    numerologyBtn.disabled = false;
+    lifePathBtn.disabled = false;
+    dayNumBtn.disabled = false;
+  }, 5300);
 
   const describeLifePath = () => {
     axios.get(`${BASEURL}compliment`).then(res => {
@@ -55,14 +68,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   };
 
-  const dateInput = () => {
-    const number = document.getElementById("dayInput").value;
-    axios.get(`${BASEURL}numerology/${number}`).then(res => {
-      const data = res.data;
-      alert(data);
-    });
-  };
-
   const getLifePath = () => {
     const number = document.getElementById("dayInput").value;
     axios.get(`${BASEURL}numerology/${number}`).then(res => {
@@ -76,12 +81,11 @@ document.addEventListener("DOMContentLoaded", function () {
   numerologyBtn.addEventListener("click", describeNumerology);
   submitBtn.addEventListener("click", getLifePath);
 
-  // backspace to delete dashes
+  // removing dashes
   dayInput.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
-      dateInput();
+      getLifePath();
     }
-
     if (event.key === "Backspace") {
       const cursorPosition = this.selectionStart;
       if (this.value[cursorPosition - 1] === "-") {
