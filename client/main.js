@@ -68,13 +68,27 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   };
 
+  // DRAFT
+
+  // main.js
   const getLifePath = () => {
     const number = document.getElementById("dayInput").value;
     axios.get(`${BASEURL}numerology/${number}`).then(res => {
       const data = res.data;
-      alert(data);
+      // Store the data in localStorage
+      localStorage.setItem("data", JSON.stringify(data));
+      // Redirect to dataPage.html
+      window.location.href = "dataPage.html";
     });
   };
+
+  // const getLifePath = () => {
+  //   const number = document.getElementById("dayInput").value;
+  //   axios.get(`${BASEURL}numerology/${number}`).then(res => {
+  //     const data = res.data;
+  //     alert(data);
+  //   });
+  // };
 
   lifePathBtn.addEventListener("click", describeLifePath);
   dayNumBtn.addEventListener("click", describeDayNumber);

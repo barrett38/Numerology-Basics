@@ -215,12 +215,9 @@ function getNumerologyProfile(number0) {
     numerologyQuote = `In your case, your Day Number and Life Path Number are the same.`;
   }
 
-  const finalQuote = `Your Life Path Number is ${lifePath}. ${lifePathQuote}`;
-  const finalQuote2 = `Your Day Number is ${dayNum}. ${numerologyQuote}`;
-  const finalFinal = `${finalQuote}
-  
-  ${finalQuote2}`;
-  return finalFinal;
+  const finalQuote = `Your Life Path Number is ${lifePath}. ${lifePathQuote} Your Day Number is ${dayNum}. ${numerologyQuote}`;
+  // const finalFinal = `${finalQuote} ${finalQuote2}`;
+  return finalQuote;
 }
 
 module.exports = {

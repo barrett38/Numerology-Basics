@@ -49,9 +49,9 @@ body {
   opacity: 0;
   animation: fadeIn 4s ease forwards;
   animation-delay: 0.8s;
-  -webkit-user-select: none; /* Chrome, Safari, and Opera */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 

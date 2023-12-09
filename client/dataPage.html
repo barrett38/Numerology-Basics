@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Page</title>
+    <link rel="stylesheet" type="text/css" href="./dataPage.css" />
+    <link rel="reset" type="text/css" href="./reset.css" />
+  </head>
+  <body>
+    <div id="background1"></div>
+    <ul id="data">
+      <script>
+        const data = JSON.parse(localStorage.getItem("data"));
+        document.getElementById("data").textContent = JSON.stringify(data);
+      </script>
+    </ul>
+  </body>
+</html>
