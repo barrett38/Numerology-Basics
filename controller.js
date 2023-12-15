@@ -216,7 +216,6 @@ function getNumerologyProfile(number0) {
   }
 
   const finalQuote = `Your Life Path Number is ${lifePath}. ${lifePathQuote} Your Day Number is ${dayNum}. ${numerologyQuote}`;
-  // const finalFinal = `${finalQuote} ${finalQuote2}`;
   return finalQuote;
 }
 
