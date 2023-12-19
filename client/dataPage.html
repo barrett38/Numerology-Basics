@@ -7,11 +7,11 @@
   </head>
   <body>
     <div id="background1"></div>
-    <ul id="data">
+    <div id="data">
       <script>
         const data = JSON.parse(localStorage.getItem("data"));
         document.getElementById("data").textContent = JSON.stringify(data);
       </script>
-    </ul>
+    </div>
   </body>
 </html>

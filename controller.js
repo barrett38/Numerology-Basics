@@ -234,7 +234,7 @@ module.exports = {
   },
   describeNumerology(req, res) {
     const numerology = [
-      `Numerology is the study of numbers and their meanings. It is believed that numbers have a direct correlation with all nature and divinity. Numbers have meanings because we place meaning behind numbers. Numerology is a tool that helps us understand our lives and the world around us better. Numerology is above Astrology and the Tarot connects Astrology and Numerology.`,
+      `Numerology is the study of numbers and their meanings. It is believed that numbers have a direct correlation with all nature and divinity. Numbers have meanings because we place meaning behind numbers. Numerology is a tool that helps us understand our lives and the world around us better. Numerology is above Astrology.`,
     ];
     res.status(200).send(getRandom(numerology));
   },

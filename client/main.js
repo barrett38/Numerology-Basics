@@ -48,27 +48,26 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 5300);
 
   const describeLifePath = () => {
-    axios.get(`${BASEURL}compliment`).then(res => {
+    axios.get(`${BASEURL}descLifePath`).then(res => {
       const data = res.data;
       alert(data);
     });
   };
 
   const describeDayNumber = () => {
-    axios.get(`${BASEURL}fortune`).then(res => {
+    axios.get(`${BASEURL}descDayNum`).then(res => {
       const data = res.data;
       alert(data);
     });
   };
 
   const describeNumerology = () => {
-    axios.get(`${BASEURL}aurelius`).then(res => {
+    axios.get(`${BASEURL}descNumerology`).then(res => {
       const data = res.data;
       alert(data);
     });
   };
 
-  // main.js
   const getLifePath = () => {
     const number = document.getElementById("dayInput").value;
     axios.get(`${BASEURL}numerology/${number}`).then(res => {

@@ -11,9 +11,9 @@ const {
   getLifePath,
 } = require("./controller");
 
-app.get(`/api/compliment`, describeLifePath);
-app.get(`/api/fortune`, describeDayNumber);
-app.get(`/api/aurelius`, describeNumerology);
+app.get(`/api/descLifePath`, describeLifePath);
+app.get(`/api/descDayNum`, describeDayNumber);
+app.get(`/api/descNumerology`, describeNumerology);
 app.get(`/api/numerology/:number`, getNumerologyProfile);
 app.get(`/api/numerology/:number`, getLifePath);
 
