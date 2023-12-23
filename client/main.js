@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const PORT = 4000;
+  const PORT = 8000;
   const BASEURL = `http://localhost:${PORT}/api/`;
 
   // background image transition
