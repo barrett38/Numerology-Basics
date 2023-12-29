@@ -4,14 +4,10 @@
     <title>Your Life Path and Day Number</title>
     <link rel="stylesheet" type="text/css" href="./dataPage.css" />
     <link rel="reset" type="text/css" href="./reset.css" />
+    <script src="dataPage.js"></script>
   </head>
   <body>
     <div id="background1"></div>
-    <div id="data">
-      <script>
-        const data = JSON.parse(localStorage.getItem("data"));
-        document.getElementById("data").textContent = JSON.stringify(data);
-      </script>
-    </div>
+    <div id="data"></div>
   </body>
 </html>
