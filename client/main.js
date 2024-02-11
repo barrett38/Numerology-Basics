@@ -1,5 +1,5 @@
 import { changeBackground } from "./components/backgroundChanger.js";
-import { controlButton } from "./components/buttonController.js";
+import { controlButton } from "./components/disableButton.js";
 import { addToPlacehold } from "./components/inputController.js";
 
 document.addEventListener("DOMContentLoaded", function () {

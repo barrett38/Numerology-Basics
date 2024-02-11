@@ -8,7 +8,7 @@ const {
   describeNumerology,
   getNumerologyProfile,
   // getLifePath,
-} = require("../controller.js");
+} = require("../client/components/controller.js");
 
 describe("Controller Tests", () => {
   let mockResponse;

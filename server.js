@@ -11,7 +11,7 @@ const {
   describeNumerology,
   getNumerologyProfile,
   getLifePath,
-} = require("./controller");
+} = require("./client/components/controller");
 
 app.get(`/api/descLifePath`, describeLifePath);
 app.get(`/api/descDayNum`, describeDayNumber);
