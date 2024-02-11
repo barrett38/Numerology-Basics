@@ -1,0 +1,49 @@
+body {
+  background-image: url("./backgrounds/background1.JPG");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 71vh;
+  margin: 0;
+}
+
+#background1 {
+  position: absolute;
+  width: 116%;
+  height: 116%;
+  transition: opacity 1s;
+  background-position: center;
+  background-size: 100%;
+  z-index: -1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#data {
+  animation: fadeIn 2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 350px;
+  height: 1070px;
+  border-radius: 0;
+  color: white;
+  font-size: 17px;
+  padding: 17px;
+  background-color: black;
+  border: 0px solid black;
+  text-align: center;
+  font-family: "Helvetica", sans-serif;
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
