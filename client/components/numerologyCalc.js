@@ -22,7 +22,7 @@ const number22 =
   "The Number 22 is a Master Number. 22 is the most powerful of all numbers. People who are Life Path 22's or who are born on a 22 day are visionary, practical, and have a strong desire to build. They are ambitious, hard-working, and have a strong sense of justice. In a bad frame of mind 22's can be stubborn, rigid, and have a hard time relaxing.";
 const number33 =
   "The Number 33 is a Master Number. 33 is the most influential of all numbers. People who are Life Path 33's are compassionate, generous, and have a strong desire to help others. They are inspirational, visionary, and have a strong sense of spirituality. In a bad frame of mind 33's can be anxious, nervous, and have a hard time trusting others.";
-const getRandom = co => co[Math.floor(Math.random() * co.length)];
+const getRandom = (co) => co[Math.floor(Math.random() * co.length)];
 
 function getNumerologyProfile(number0) {
   let number_1 = number0.replace(/[^0-9/]/g, "");
@@ -31,7 +31,14 @@ function getNumerologyProfile(number0) {
   number = parseInt(number);
   let dayNum = 0;
   let numerologyQuote;
-  if (number === 1 || number === 10 || number === 19 || number === 28 || number === 37 || number === 46) {
+  if (
+    number === 1 ||
+    number === 10 ||
+    number === 19 ||
+    number === 28 ||
+    number === 37 ||
+    number === 46
+  ) {
     numerologyQuote = `${number1}`;
     dayNum = 1;
   } else if (number === 2 || number === 20) {
@@ -68,7 +75,8 @@ function getNumerologyProfile(number0) {
     numerologyQuote = `${number33}`;
     dayNum = 33;
   } else {
-    numerologyQuote = "Please enter a valid numerology number between 1 and 31.";
+    numerologyQuote =
+      "Please enter a valid numerology number between 1 and 31.";
   }
 
   number_1 = number_1.split("").map(Number);
